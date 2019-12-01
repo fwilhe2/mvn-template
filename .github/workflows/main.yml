@@ -1,0 +1,15 @@
+name: Java CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    container:
+      image: maven:3-jdk-8
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Test
+      run: mvn --batch-mode verify
