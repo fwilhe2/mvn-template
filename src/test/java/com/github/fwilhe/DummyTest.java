@@ -1,10 +1,11 @@
 package com.github.fwilhe;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class DummyTest {
     @Test
     public void test() {
-        new Dummy().toString();
+        assertNotNull(new Dummy());
     }
 }
