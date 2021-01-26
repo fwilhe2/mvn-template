@@ -16,3 +16,4 @@ jobs:
           architecture: x64
       - run: mvn -v
       - run: mvn --batch-mode --no-transfer-progress verify
+      - run: java -cp target/my-app-1.0-SNAPSHOT.jar com.github.fwilhe.Dummy
